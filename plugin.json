@@ -1,0 +1,28 @@
+{
+    "Name": "DCE-Jenkins",
+    "Extensions": {
+        "daocloud.DCE-Jenkins.navigatorNode": {
+            "ExtendedPoint": "dce.navigator.nodeSpecs",
+            "Object": {
+                "Title": "DCE-Jenkins",
+                "ParentUID": "dce.core.navigator.plugins",
+                "Icon": "https://dce.daocloud.io/v1/plugin-store/blob/Jenkins-60ec5.svg",
+                "NavigationTargetUID": "daocloud.DCE-Jenkins.globalView"
+            }
+        },
+        "daocloud.DCE-Jenkins.globalView": {
+            "ExtendedPoint": "dce.global.views",
+            "Object": {
+                "Name": "DCE-Jenkins",
+                "ComponentClass": {
+                    "ClassName": "dce.client.htmlbridge.HtmlView",
+                    "Object": {
+                        "Root": {
+                            "URL": "/login"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
